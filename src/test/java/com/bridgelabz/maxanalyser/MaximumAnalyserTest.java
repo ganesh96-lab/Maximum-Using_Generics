@@ -42,4 +42,11 @@ public class MaximumAnalyserTest
         Float maximum=maximumAnalyser.findMaximum(10.1f,20.2f,30.3f);
         Assert.assertEquals((Float)30.3f,maximum);
     }
+
+    @Test
+    public void givenThreeString_findMax_atFirstPosition(){
+        String maximum=maximumAnalyser.findMaximum("BridgeLabz","Capgiminai","Accenture");
+        Assert.assertEquals((String) "Capgiminai",maximum);
+    }
 }
+
