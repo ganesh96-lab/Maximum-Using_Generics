@@ -13,14 +13,12 @@ public class MaximumAnalyser {
         }
     }
 
-    public Float findMaximum(Float firstNumber,Float secondNumber,Float thirdNumber){
-        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0){
+    public Float findMaximum(Float firstNumber,Float secondNumber,Float thirdNumber) {
+        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0) {
             return firstNumber;
-        }
-        else if (secondNumber.compareTo(firstNumber) > 0 && secondNumber.compareTo(thirdNumber) > 0){
+        } else if (secondNumber.compareTo(firstNumber) > 0 && secondNumber.compareTo(thirdNumber) > 0) {
             return secondNumber;
-        }
-        else {
+        } else {
             return thirdNumber;
         }
     }
