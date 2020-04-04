@@ -48,5 +48,17 @@ public class MaximumAnalyserTest
         String maximum=maximumAnalyser.findMaximum("BridgeLabz","Capgiminai","Accenture");
         Assert.assertEquals((String) "Capgiminai",maximum);
     }
+
+    @Test
+    public void givenThreeString_findMax_atSecondPosition(){
+        String maximum=maximumAnalyser.findMaximum("BridgeLabz","Capgiminai","Accenture");
+        Assert.assertEquals((String) "Capgiminai",maximum);
+    }
+
+    @Test
+    public void givenThreeString_findMax_atThirdPosition(){
+        String maximum=maximumAnalyser.findMaximum("BridgeLabz","Capgiminai","Accenture");
+        Assert.assertEquals((String) "Capgiminai",maximum);
+    }
 }
 
