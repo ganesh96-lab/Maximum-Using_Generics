@@ -1,11 +1,12 @@
 package com.bridgelabz.maxanalyser;
 
-public class MaximumAnalyser {
-    public Integer findMaximum(Integer firstNumber,Integer secondNumber,Integer thirdNumber) {
-        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0) {
+public class MaximumAnalyser <T extends Comparable>{
+
+    public T findMaximum(T firstNumber,T secondNumber,T thirdNumber) {
+        if (firstNumber.compareTo(secondNumber) >= 0 && firstNumber.compareTo(thirdNumber) >= 0) {
             return firstNumber;
         }
-        else if (secondNumber.compareTo(firstNumber) > 0 && secondNumber.compareTo(thirdNumber) > 0) {
+        else if (secondNumber.compareTo(firstNumber) >= 0 && secondNumber.compareTo(thirdNumber) >= 0) {
             return secondNumber;
         }
         else {
@@ -13,24 +14,4 @@ public class MaximumAnalyser {
         }
     }
 
-    public Float findMaximum(Float firstNumber,Float secondNumber,Float thirdNumber) {
-        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0) {
-            return firstNumber;
-        } else if (secondNumber.compareTo(firstNumber) > 0 && secondNumber.compareTo(thirdNumber) > 0) {
-            return secondNumber;
-        } else {
-            return thirdNumber;
-        }
-    }
-
-    public String findMaximum(String firstString, String secondString, String thirdString) {
-        if ((firstString.compareTo(secondString) > 0) && (secondString.compareTo(thirdString) > 0)){
-            return  firstString;
-        }
-        else if ((secondString.compareTo(firstString) > 0) && (secondString.compareTo(thirdString) >0)){
-            return secondString;
-        }else {
-            return thirdString;
-        }
-    }
 }
